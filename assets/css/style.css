@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+body{
+	font-family:arial, sans-serif;
+}
+a{
+	text-decoration: none;
+	font-weight: 500;
+}
+section.landing-page{
+	background-color: #0b183d;
+	height: 90vh;
+	width: 100%;
+	/*overflow: hidden;*/
+}
+
+header{
+    width: 100%;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    background: transparent;
+    overflow: hidden;
+}
+
+header .content{
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+    position: relative;
+}
+
+header .row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.logo{
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+nav{
+    display: inline-block;
+    transition:  all 0.5s
+}
+
+nav a{
+    line-height: 1.5;
+    display: inline-block;
+    color: #fff;
+    padding: .4rem 1rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 18px;
+}
+.link-icons a{
+	position: relative;
+	display: inline-block;
+	padding: .4rem 1rem;
+}
+/*nav a.active::after{
+ position: absolute;
+ content: '';
+ bottom: 0;
+ left: 50%;
+ height:3px;
+ width: 50%;
+ transform: translate(-50%,0);
+ background: #fa755a;
+}*/
+
+.landing-page .landing-content{
+	width: 100%;
+	height: calc(100% - 73px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.landing-content .landing-inner{
+	width: 100%;
+	position: relative;
+	text-align: center;
+	padding: 2em 0;
+}
+
+.landing-inner h2{
+	color: #fff;
+	font-size: 25px;
+	line-height: 1.5;
+	font-weight: 600;
+}
+
+.landing-inner p{
+	color: #fff;
+	font-weight: ;
+	font-size: 20px;
+}
+
+.landing-image{
+	padding-top: 2em;
+	height: 100%;
+	/*overflow: hidden;*/
+	position: relative;
+}
+
+.landing-image img{
+	/*width: 500px;*/
+	position: absolute;
+	bottom: -2px;
+	height: 350px;
+	transform: translate(-50%, 0);
+}
