@@ -190,6 +190,7 @@ main .think-Place{
     left: 0;
     padding: 1em;
     background: rgba(0,0,0,0.2);
+    background-image:linear-gradient(0deg, #000000, #ffffff00);
     width: 100%;
 }
 .img-content p.country{
@@ -232,11 +233,89 @@ main .think-Place{
 
 
 
+/*====================*/
+.tour-sites{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    overflow: hidden;
+}
 
+.tour-sites:after{
+    background: rgba(0,0,0,0.2);
+    background-image:linear-gradient(0deg, #1c1e20, #ffffff00);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
 
+.tour-sites .seach-content{
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
 
+.search-form{
+    position: relative;
+    margin: 0 auto;
+    padding: 0 0 2.5rem;
+    width: 58rem;
+}
+.search-input {
+    background-color: #ffffff;
+    border: none;
+    border-radius: .3rem;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
+    box-sizing: border-box;
+    color: #1c1e20;
+    display: block;
+    font-size: 1.5rem;
+    height: 3.7rem;
+    padding: 0 2.5rem 0 4.5rem;
+    width: 100%;
+    -webkit-appearance: none;
+    outline: none;
+}
+.tour-card{
+    position: relative;
+    margin-bottom: 20px ;
+}
+.tour-card-details h3{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: samsungsharpsans;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+.tour-card-details p{
+    color:#949494;
+    font-size: 15px;
+    font-family: Avenir-Light;
+    line-height: 1.2;
+}
+.tour-card .tour-img{
+    height: 15rem;
+}
 
-
+.p-one{
+    padding: 0 10px;
+}
 .mb-6{
     margin-bottom: 6rem;
 }
