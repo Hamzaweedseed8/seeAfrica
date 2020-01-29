@@ -32,7 +32,7 @@ a:hover{
 section.landing-page{
     position: relative;
 	background-color: #0b183d;
-    height: 600px;
+    height: 650px;
 	width: 100%;
 	overflow: hidden;
 }
@@ -67,8 +67,8 @@ header .row{
 
 header .logo{
     display: inline-block;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 700;
     color: #fff;
     font-family: samsungsharpsans;
 }
@@ -91,6 +91,7 @@ nav a{
     letter-spacing: 1px;
     position: relative;
     font-size: 18px;
+    padding-bottom: 0;
 }
 .link-icons a{
 	position: relative;
@@ -103,7 +104,7 @@ nav a{
 
 .landing-page .landing-content{
 	width: 100%;
-	height: calc(100% - 73px);
+	height: calc(100% - 85px);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
