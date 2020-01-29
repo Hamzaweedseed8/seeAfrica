@@ -216,7 +216,8 @@ main .think-Place{
     margin:0;
 }
 
-.forward {
+.icon .forward,
+.forward span {
     width: 25px;
     height: 25px;
     line-height: 25px;
@@ -226,7 +227,9 @@ main .think-Place{
     text-align: center;
     color: #fff;
 }
-
+.forward span i{
+    margin-top: -2px;
+}
 /* 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15) */
 
 
@@ -273,7 +276,7 @@ main .think-Place{
     position: relative;
     margin: 0 auto;
     padding: 0 0 2.5rem;
-    width: 58rem;
+    /* width: 58rem; */
 }
 .search-input {
     background-color: #ffffff;
@@ -311,6 +314,7 @@ main .think-Place{
 }
 .tour-card .tour-img{
     height: 15rem;
+    width: 100%;
 }
 
 .p-one{
