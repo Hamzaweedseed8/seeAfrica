@@ -253,13 +253,15 @@ main .think-Place{
 .mt-8{
     margin-top: 8rem;
 }
+
+
 .center
 {
    padding-top: 25px;
 }
 .slider
 {
-    color: white;
+    color: #fff;
     font-size: 39px;
     font-weight: bold;
     text-transform: uppercase;
@@ -268,11 +270,11 @@ main .think-Place{
 .slide{
     overflow: hidden;
     height: 80px;
-    background: red;
+    background: #ff0000;
 }
 .slide div div{
     display: inline-block;
-    color: white;
+    color: #fff;
     padding: 4px 12px;
     border-radius: 50px;
     margin-bottom: 40px;
@@ -304,7 +306,7 @@ main .think-Place{
       background-size: cover;
       width: 300px;
       height: 360px;
-      background: white;
+      background: #fff;
 
     }
     #section{
@@ -339,7 +341,7 @@ main .think-Place{
     color: red;
   }
   h1{
-    color:white;
+    color:#fff;
     top:30%;
     left:2%;
     text-shadow: 0px 0px  red,
@@ -348,8 +350,8 @@ main .think-Place{
                             0px 0px 40px red;
                             
     font-size:3em;
-    font-familiy:monospace;
-    border:2px solid white;
+    font-family:monospace;
+    border:2px solid #fff;
     box-shadow: 0px 0px 10px gold;
     text-transform:uppercase;
 }
