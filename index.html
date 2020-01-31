@@ -17,7 +17,7 @@
 </head>
 <body>
 	<section class="landing-page">
-		<header>
+		<header class="js-navbar">
             <div class="content">
                 <div class="row">
                     <a href="#" class="logo">seeafrica</a>
@@ -30,6 +30,7 @@
                     </nav>
                     <div class="link-icons">
                         <a href="#Signup"data-toggle="modal" class="hvr-float-shadow"><img src="assets/images/SVG/profile.svg" alt=""></a>
+                        
                         <a href="#" class="hvr-float-shadow"><img src="assets/images/SVG/search_left.svg" alt=""></a>
                         <a href="#" class="hvr-float-shadow"><img src="assets/images/SVG/shopping_cart.svg" alt=""></a>
                     </div>
@@ -89,70 +90,64 @@
                </div>
            </div> 
         </section>
+        <!--This section contains Animated Text and Sliders-->
+        <section class="tour-slide-show">
+            <div class="container">
+                <div class="slider">
+                    Real
+                    <div class="slide" data-aos="zoom-in-up" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                        <div><div>Feeling</div></div>
+                        <div><div>Experience</div></div>
+                        <div><div>Comfort</div></div>
+                    </div>
+                    Tour
+                </div>
+                <div class="swiper-container" data-aos="zoom-in-up" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="imgBx">
+                                <img src="assets/images/Elmina.jpg"width="300px"height="300px">
+                            </div>
+                            <div class="details">
+                                <h4>Larabanga Mosque<br><span>Northern Region</span></h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgBx">
+                                <img src="assets/images/Elmina.jpg"width="300px"height="300px">
+                            </div>
+                            <div class="details">
+                                <h4>Larabanga Mosque<br><span>Northern Region</span></h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgBx">
+                                <img src="assets/images/Elmina.jpg"width="300px"height="300px">
+                            </div>
+                            <div class="details">
+                                <h4>Larabanga Mosque<br><span>Northern Region</span></h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="imgBx">
+                                <img src="assets/images/Elmina.jpg"width="300px"height="300px">
+                            </div>
+                            <div class="details">
+                                <h4>Larabanga Mosque<br><span>Northern Region</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="writer">
+                    <div class="x h1" data-period="1000" data-type='["Ready To move", "Join See Africa","And have Real Experience....."]'>
+                        <span class="x1"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-
-
-
-
-    <!--This section contains Animated Text and Sliders-->
-    <section id="section">
-        <div class="container">
-            <div class="center slider">
-                Real
-                <div class="slide" data-aos="zoom-in-up" data-aos-duration="500" data-aos-easing="ease-in-sine">
-                    <div><div>Feeling</div></div>
-                    <div><div>Experience</div></div>
-                    <div><div>Comfort</div></div>
-                </div>
-                Tour
-            </div>
-            <div class="swiper-container" data-aos="zoom-in-up" data-aos-duration="500" data-aos-easing="ease-in-sine">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="imgBx">
-                            <img src="assets/images/Elmina.jpg"width="300px"height="300px">
-                        </div>
-                        <div class="details">
-                            <h4>Larabanga Mosque<br><span>Northern Region</span></h4>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="imgBx">
-                            <img src="assets/images/Elmina.jpg"width="300px"height="300px">
-                        </div>
-                        <div class="details">
-                            <h4>Larabanga Mosque<br><span>Northern Region</span></h4>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="imgBx">
-                            <img src="assets/images/Elmina.jpg"width="300px"height="300px">
-                        </div>
-                        <div class="details">
-                            <h4>Larabanga Mosque<br><span>Northern Region</span></h4>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="imgBx">
-                            <img src="assets/images/Elmina.jpg"width="300px"height="300px">
-                        </div>
-                        <div class="details">
-                            <h4>Larabanga Mosque<br><span>Northern Region</span></h4>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="writer">
-                <div class="x h1" data-period="1000" data-type='["Ready To move", "Join See Africa","And have Real Experience....."]'>
-                    <span class="x1"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-<!--End of Text Animation ans Slider Section-->
 
 
 
@@ -165,13 +160,82 @@
   
 
     </footer>
-
-
-
-
+    <!-- Modal -->
+    <div class="modal fade" id="Signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5> -->
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+          <ul class="modal-header">
+            <li class="">
+              <a class="nav-link"><i class="fas fa-user mr-1"></i>
+                Login</a>
+            </li>
+            <li>
+              <a class="nav-link active"><i class="fas fa-user-plus mr-1"></i>
+                Signup</a>
+            </li>
+          </ul>
+        <div class="modal-body">
+          <div class="form-group">
+                  <input type="email" name="username"placeholder="Email" class="form-control"required>
+              </div>    
+              <div class="form-group">
+                  <input type="password"placeholder="Password" name="password" class="form-control"required>
+              </div>
+              <div class="form-group">
+                  <input type="password"placeholder="Confirm Password" name="Confirm_password" class="form-control"required>
+              </div>
+              <div class="form-group">
+                  <input type="submit" class="btn btn-primary" value="Signup">
+              </div>
+        </div>
+        <div class="modal-footer">
+           Already Have an Account? <button type="button" class="btn btn-primary"data-toggle="modal" data-target="#Login"data-dismiss="modal">Login</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+      </div>
+    </div>
+  </div>
+  </div> 
+  <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+                  <input type="email" name="username"placeholder="Email" class="form-control"required>
+              </div>    
+              <div class="form-group">
+                  <input type="password"placeholder="Password" name="password" class="form-control"required>
+              </div>
+              <div class="form-group">
+                  <input type="submit" class="btn btn-primary" value="Login">
+              </div>
+        </div>
+        <div class="modal-footer">
+          Don't Have an account ? <button type="button" class="btn btn-primary"data-toggle="modal" data-target="#Signup"data-dismiss="modal">SignUp</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  
     <!--Java Scripts-->
     
     <script type="text/javascript"src="assets/js/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript"src="assets/js/swiper.js"></script>
     <script type="text/javascript"src="assets/js/aos.js"></script>
     <script type="text/javascript"src="assets/js/main.js"></script>

@@ -109,3 +109,21 @@
         }
 
     };
+
+var windowScrolled = function() {
+
+
+  $(window).scroll(function() {
+
+    var $w = $(this), st = $w.scrollTop(), navbar = $('.js-navbar') ;
+
+    if ( st > 550 ) {
+      navbar.addClass('scrolled');
+    } else {
+      navbar.removeClass('scrolled');
+    }
+    
+  })
+
+}
+windowScrolled();
