@@ -376,10 +376,9 @@ main .think-Place{
 
 .slide div:nth-child(1){
     animation: animate 5s linear infinite;
-
 }
-@keyframes animate
-{
+
+@keyframes animate{
     0%{margin-top: -270px;}
     5%{margin-top: -180px;}
     33%{margin-top: -180px;}
@@ -389,7 +388,7 @@ main .think-Place{
     99.99%{margin-top: 0px;}
     100%{margin-top: -270px;}
 }
-    .swiper-container {
+.swiper-container {
       width: 100%;
       padding-top: 50px;
       padding-bottom: 50px;
@@ -418,9 +417,8 @@ main .think-Place{
     width: 100%;
  }
  .swiper-slide .details{
-     box-sizing: border-box;
-    
-     padding: 15px;
+    box-sizing: border-box;
+    padding: 15px;
  }
   .swiper-slide .details h4{
     margin: 0;
@@ -433,17 +431,19 @@ main .think-Place{
     font-size: 16px;
     color: red;
   }
+
+.writer{
+    padding:0 2em;
+    position: relative;
+}
 .h1{
+    text-align: center;
     color:#fff;
-    top:30%;
-    left:2%;
-    text-shadow: 0px 0px  red,
-                0px 0px 20px red,
-                0px 0px 30px red,
-                0px 0px 40px red;              
+    text-shadow: 0px 0px  #fe6277,
+                0px 0px 20px #fe6277,
+                0px 0px 30px #fe6277,
+                0px 0px 40px #fe6277;              
     font-size:3em;
     font-family:monospace;
-    border:2px solid #fff;
-    box-shadow: 0px 0px 10px gold;
     text-transform:uppercase;
 }
