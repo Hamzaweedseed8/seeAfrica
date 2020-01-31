@@ -363,6 +363,7 @@ main .think-Place{
 .slide{
     overflow: hidden;
     height: 80px;
+
     /* background: #ff0000; */
 }
 .slide div div{
@@ -446,4 +447,25 @@ main .think-Place{
     font-size:3em;
     font-family:monospace;
     text-transform:uppercase;
+}
+.main-section{
+    margin: 0  auto;
+    margin-top: 130px;
+    padding: 0;
+}
+.modal-content{
+    
+    opacity: .9;
+    padding: 0 18px;
+    border-radius: 10px;
+}
+.form-group{
+    margin-bottom: 35px;
+}
+.form-group input{
+    height: 42px;
+    border-radius:5px;
+    border:0;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
