@@ -57,6 +57,22 @@ a:hover{
 .mt-8{
     margin-top: 8rem;
 }
+.btn{
+    padding:.3rem 1rem;
+    font-size: 15px;
+    margin: 0.5rem;
+    border-radius: .125rem !important;
+    outline: none !important;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.btn-primary{
+    background-color: #819cfc;
+    border-color: #819cfc;
+}
+
+/* s */
 /* ======================== */
 
 section.landing-page{
@@ -468,20 +484,32 @@ main section.tour-slide-show{
     padding: 0;
 }
 
+.modal-open .modal{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
 
 .modal-header{
     position: relative;
     z-index: 1;
-    padding: .7rem;
+    padding: 0;
     border: 0;
-    border-radius: .25rem;
-    background-color: #819cfc;
-    margin: -1.5rem 1rem 0 1rem;
+    border-radius:0 !important;
+    background-color: #fff;
+    margin: -2rem 1rem 0 1rem;
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
-.modal-header li{
+.forms{
+    display: none;
+}
+.forms.active{
+    display: block;
+}
+
+.modal-header button{
     list-style: none;
     position: relative;
     overflow: hidden;
@@ -494,8 +522,16 @@ main section.tour-slide-show{
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 1rem 0;
 }
-
+.modal-header button.activee{
+    background-color: #819cfc;
+    color: #fff;
+}
 .modal-header li a{
     text-align: center;
     color: #fff;
@@ -510,14 +546,58 @@ main section.tour-slide-show{
 .modal-content{
     padding: 0 18px;
     border-radius: 0;
+    min-width: 500px !important;
 }
-.form-group{
+/* .form-group{
     margin-bottom: 35px;
+}*/
+.form-control:focus,
+.form-control{
+    outline: none !important;
+} 
+
+.inputWrapper{
+    display: flex;
+    height: 40px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    border-bottom: 1px solid #ccc;
+    margin: 30px 0;
+    position: relative;
 }
-.form-group input{
-    height: 42px;
-    border-radius:5px;
-    border:0;
-    font-size: 18px;
-    letter-spacing: 2px;
+
+.inputWrapper span{
+    width: 50px;
+    color: #0b183d;
+    font-size: 25px;
+}
+.inputField {
+    position: relative;
+    width: calc(100% - 50px);
+}
+.inputField label{
+    position: absolute;
+    top:0;
+    left:0;
+    padding:0;
+    pointer-events: none;
+    font-size: 16px;
+    transition: .5s;
+}
+.inputField input:focus + label,
+.inputField input:valid + label{
+    top: -25px;
+    color: #0b183d;
+    font-weight: 700;
+}
+.inputField input{
+    border: none;
+    height: 100%;
+    outline: none !important;
+    width: 100% ;
+    padding: 0 .75rem;
+    padding-right: 1.3rem;
+    padding-left: 0;
 }

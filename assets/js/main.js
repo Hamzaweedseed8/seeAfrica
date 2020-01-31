@@ -111,8 +111,6 @@
     };
 
 var windowScrolled = function() {
-
-
   $(window).scroll(function() {
 
     var $w = $(this), st = $w.scrollTop(), navbar = $('.js-navbar') ;
@@ -127,3 +125,17 @@ var windowScrolled = function() {
 
 }
 windowScrolled();
+
+function openForms(evt, formName) {
+  var i ,x = $('.forms');
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  y = $('.formsLinks');
+  for (i = 0; i < y.length; i++) {
+    y[i].className = y[i].className.replace(" activee", "");
+  }
+  document.getElementById(formName).style.display = "block";
+  evt.currentTarget.className += " activee";
+  
+}

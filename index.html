@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/hover.css">
     <link rel="stylesheet" href="assets/css/wickedcss.min.css">
+
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- <script src="https://kit.fontawesome.com/2d1cbc56a2.js" crossorigin="anonymous"></script> -->
+   
 </head>
 <body>
 	<section class="landing-page">
@@ -95,7 +98,7 @@
             <div class="container">
                 <div class="slider">
                     Real
-                    <div class="slide" data-aos="zoom-in-up" data-aos-duration="500" data-aos-easing="ease-in-sine">
+                    <div class="slide">
                         <div><div>Feeling</div></div>
                         <div><div>Experience</div></div>
                         <div><div>Comfort</div></div>
@@ -160,78 +163,86 @@
   
 
     </footer>
+
+
     <!-- Modal -->
-    <div class="modal fade" id="Signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> -->
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-          <!-- <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5> -->
-          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button> -->
-          <ul class="modal-header">
-            <li class="">
-              <a class="nav-link"><i class="fas fa-user mr-1"></i>
-                Login</a>
-            </li>
-            <li>
-              <a class="nav-link active"><i class="fas fa-user-plus mr-1"></i>
-                Signup</a>
-            </li>
-          </ul>
-        <div class="modal-body">
-          <div class="form-group">
-                  <input type="email" name="username"placeholder="Email" class="form-control"required>
-              </div>    
-              <div class="form-group">
-                  <input type="password"placeholder="Password" name="password" class="form-control"required>
-              </div>
-              <div class="form-group">
-                  <input type="password"placeholder="Confirm Password" name="Confirm_password" class="form-control"required>
-              </div>
-              <div class="form-group">
-                  <input type="submit" class="btn btn-primary" value="Signup">
-              </div>
+    <div class="modal fade" id="Signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="formsLinks activee" onClick="openForms(event, 'Form-login')"><a class=""><i class="fa fa-user mr-1"></i>Login</a></button>
+                    <button class="formsLinks" type="button" onClick="openForms(event, 'Form-singup')"><a class=""><i class="fa fa-user-plus mr-1"></i>Signup</a></button>
+                </div>
+                <div id="Form-login" class="forms active">
+                    <form class="modal-body">
+                        <div class="form-group inputWrapper">
+                            <span><i class="fa fa-envelope"></i></span>
+                            <div class="inputField">
+                                <input type="email" name="email" required>
+                                <label for="email">Email</label>
+                            </div>
+                        </div> 
+                        <div class="form-group inputWrapper">
+                            <span><i class="fa fa-lock"></i></span>
+                            <div class="inputField">
+                                <input type="password" name="password" required>
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                        <div class="">
+                            <input type="submit" name="" value="submit" class="btn btn-sm btn-primary">
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                        Not Yet A Mamber? <button type="button" class="btn btn-primary" onClick="openForms(event, 'Form-singup')" >Sign Up</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <div id="Form-singup" class="forms">
+                    <form class="modal-body"> 
+                        <div class="form-group inputWrapper">
+                            <span><i class="fa fa-user"></i></span>
+                            <div class="inputField">
+                                <input type="text" name="name" required>
+                                <label for="name">Full Name</label>
+                            </div>
+                        </div>  
+                        <div class="form-group inputWrapper">
+                            <span><i class="fa fa-envelope"></i></span>
+                            <div class="inputField">
+                                <input type="email" name="email" required>
+                                <label for="email">Email</label>
+                            </div>
+                        </div> 
+                        <div class="form-group inputWrapper">
+                            <span><i class="fa fa-lock"></i></span>
+                            <div class="inputField">
+                                <input type="password" name="password" required>
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                        <div class="form-group inputWrapper">
+                            <span><i class="fa fa-lock"></i></span>
+                            <div class="inputField">
+                                <input type="password" name="confirmpassword" required>
+                                <label for="confirmpassword">Confirm Password</label>
+                            </div>
+                        </div>
+                        <div class="">
+                            <input type="submit" name="" value="submit" class="btn btn-sm btn-primary">
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                    Already Have an Account? <button type="button" onClick="openForms(event, 'Form-login')" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-footer">
-           Already Have an Account? <button type="button" class="btn btn-primary"data-toggle="modal" data-target="#Login"data-dismiss="modal">Login</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-         
-      </div>
-    </div>
-  </div>
-  </div> 
-  <div class="modal fade" id="Login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <div class="form-group">
-                  <input type="email" name="username"placeholder="Email" class="form-control"required>
-              </div>    
-              <div class="form-group">
-                  <input type="password"placeholder="Password" name="password" class="form-control"required>
-              </div>
-              <div class="form-group">
-                  <input type="submit" class="btn btn-primary" value="Login">
-              </div>
-        </div>
-        <div class="modal-footer">
-          Don't Have an account ? <button type="button" class="btn btn-primary"data-toggle="modal" data-target="#Signup"data-dismiss="modal">SignUp</button>
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-         
-      </div>
-    </div>
-  </div>
-  </div>
+    </div> 
   
   
     <!--Java Scripts-->
-    
     <script type="text/javascript"src="assets/js/jquery.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -243,6 +254,8 @@
       AOS.init({
         easing: 'ease-in-out-sine'
       });
+
+      
     </script>
 </body>
 </html>
