@@ -601,3 +601,33 @@ main section.tour-slide-show{
     padding-right: 1.3rem;
     padding-left: 0;
 }
+
+
+.collaboration,
+.waiting-for{
+    padding: 7rem 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(0deg, #096275, #043952)
+}
+
+.waiting-for .content{
+    text-align: center;
+    width: 100%;
+}
+.waiting-for .content h1{
+    color: #fff;
+    font-family: samsungsharpsans-bold;
+    font-size: 35px;
+}
+
+.waiting-for .bttn{
+    background-color: transparent;
+    border: 1px solid #18a4e0;
+    font-size: 18px;
+    padding: .6rem 2rem;
+    color: #18a4e0;
+    font-weight: 500;
+    border-radius: 10px !important;
+}
