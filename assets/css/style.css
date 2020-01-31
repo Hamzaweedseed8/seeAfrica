@@ -363,7 +363,7 @@ main .think-Place{
 .slide{
     overflow: hidden;
     height: 80px;
-    background: #ff0000;
+    /* background: #ff0000; */
 }
 .slide div div{
     display: inline-block;
@@ -438,10 +438,9 @@ main .think-Place{
     top:30%;
     left:2%;
     text-shadow: 0px 0px  red,
-                            0px 0px 20px red,
-                            0px 0px 30px red,
-                            0px 0px 40px red;
-                            
+                0px 0px 20px red,
+                0px 0px 30px red,
+                0px 0px 40px red;              
     font-size:3em;
     font-family:monospace;
     border:2px solid #fff;
