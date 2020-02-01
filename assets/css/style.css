@@ -236,6 +236,7 @@ main .think-Place{
     border-radius: 15px;
     position: relative;
     /* margin: 20px 0; */
+    box-shadow: 0 15px 20px rgba(0,0,0,0.4);
     overflow: hidden;
 }
 
@@ -336,28 +337,43 @@ main .think-Place{
     position: relative;
     margin: 0 auto;
     padding: 0 0 2.5rem;
-    /* width: 58rem; */
+}
+
+.search-box{
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    height: 3.7rem;
+    border-radius: .3rem;
+    overflow: hidden;
+    padding: 0 ;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
 }
 .search-input {
-    background-color: #ffffff;
-    border: none;
-    border-radius: .3rem;
-    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .30), 0 1px 3px 1px rgba(60, 64, 67, .15);
-    box-sizing: border-box;
     color: #1c1e20;
     display: block;
-    font-size: 1.5rem;
-    height: 3.7rem;
-    padding: 0 2.5rem 0 4.5rem;
+    font-size: 1.2rem;
+    padding: 0 2.5rem;
     width: 100%;
+    height: 100%;
     -webkit-appearance: none;
     outline: none;
+    border: none;
+}
+.search-box button{
+    font-size: 1.2rem;
+    width: 70px;
+    padding-right: 20px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    color: #1c1e20;
 }
 .tour-card{
     position: relative;
     margin-bottom: 20px ;
 }
-.tour-card-details h3{
+.tour-card-details h3 a{
     color: #fff;
     font-size: 18px;
     font-weight: 700;
@@ -373,8 +389,9 @@ main .think-Place{
     line-height: 1.2;
 }
 .tour-card .tour-img{
-    height: 15rem;
+    height: 16rem;
     width: 100%;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.4);
 }
 
 /* ==========================  */
