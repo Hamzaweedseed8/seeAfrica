@@ -683,3 +683,50 @@ main section.tour-slide-show{
     color: #fff;
     vertical-align: middle;
 }
+
+/* === latest section === */
+.latest{
+    padding: 7rem 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #f3f3f3;
+}
+section.latest h1{
+    color: #043353;
+    font-size: 35px;
+    font-family: samsungsharpsans-bold;
+}
+.latest-card-container{
+    margin: 3rem 0;
+}
+
+.latest-card{
+    position: relative;
+    margin-bottom: 20px ;
+}
+.latest-card-details h3 a{
+    color: #18a4e0;
+    font-size: 18px;
+    font-family: Avenir-Light;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.latest-card-details h3 a span{
+    font-family: samsungsharpsans-bold;
+    letter-spacing: 1px;
+}
+.latest-card-details p{
+    color:#252729;
+    font-size: 15px;
+    font-family: Avenir-Light;
+    line-height: 1.2;
+}
+.latest-card .latest-img{
+    position: relative;
+    height: 14rem;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
