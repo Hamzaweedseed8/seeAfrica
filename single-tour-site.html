@@ -13,6 +13,28 @@
     <!-- <script src="https://kit.fontawesome.com/2d1cbc56a2.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
+    <section>
+        <header class="js-navbar scrolled">
+            <div class="content">
+                <div class="row">
+                    <a href="index.html" class="logo">seeafrica</a>
+                    <nav class="links">
+                        <a href="tour-site.html" class="hvr-float-shadow">Tour site</a>
+                        <a href="#" class="hvr-float-shadow">Community</a>
+                        <a href="#" class="hvr-float-shadow">Business</a>
+                        <a href="#" class="hvr-float-shadow">partners</a>
+                        <a href="#" class="hvr-float-shadow">support</a>
+                    </nav>
+                    <div class="link-icons">
+                        <a href="#Signup"data-toggle="modal" class="hvr-float-shadow"><img src="assets/images/SVG/profile.svg" alt=""></a>
+                        
+                        <a href="#" class="hvr-float-shadow"><img src="assets/images/SVG/search_left.svg" alt=""></a>
+                        <a href="#" class="hvr-float-shadow"><img src="assets/images/SVG/shopping_cart.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
     <section class="single-tour" style="background:url(assets/images/castle-2419575.jpg);">
         <!-- <div class="container" style="position:relative; z-index: 9;"> -->
             <div class="details">
@@ -23,6 +45,84 @@
     </section>
 
 
+    <div class="modal fade" id="Signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="formsLinks activee" onClick="openForms(event, 'Form-login')"><a class=""><i class="fa fa-user mr-1"></i>Login</a></button>
+                    <button class="formsLinks" type="button" onClick="openForms(event, 'Form-singup')"><a class=""><i class="fa fa-user-plus mr-1"></i>Signup</a></button>
+                </div>
+                <div id="Form-login" class="forms active">
+                    <div class="modal-body">
+                        <div id="login_error"></div>
+                        <div class="form-group inputWrapper">
+                            <span><i class="fa fa-envelope"></i></span>
+                            <div class="inputField">
+                                <input type="email" name="email" required id="login_email">
+                                <label for="email" >Email</label>
+                            </div>
+                        </div> 
+                        <div class="form-group inputWrapper">
+                            <span><i class="fa fa-lock"></i></span>
+                            <div class="inputField">
+                                <input type="password" id="login_password" name="password" required>
+                                <label for="password" >Password</label>
+                            </div>
+                        </div>
+                        <div class="">
+                            <a href="#" class="btn btn-primary" id="loginModal">submit</a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        Not Yet A Mamber? <button type="button" class="btn btn-primary" onClick="openForms(event, 'Form-singup')" >Sign Up</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                <div id="Form-singup" class="forms">
+                    <form class="modal-body signupForm"> 
+                        <div id="signup_error"></div>
+                        <div class="form-group inputWrapper">
+                            <span><i class="fa fa-user"></i></span>
+                            <div class="inputField">
+                                <input type="text" name="name" required>
+                                <label for="name">Full Name</label>
+                            </div>
+                        </div>  
+                        <div class="form-group inputWrapper">
+                            <span><i class="fa fa-envelope"></i></span>
+                            <div class="inputField">
+                                <input type="email" name="email" required>
+                                <label for="email">Email</label>
+                            </div>
+                        </div> 
+                        <div class="form-group inputWrapper">
+                            <span><i class="fa fa-lock"></i></span>
+                            <div class="inputField">
+                                <input type="password" name="password" required>
+                                <label for="password">Password</label>
+                            </div>
+                        </div>
+                        <div class="form-group inputWrapper">
+                            <span><i class="fa fa-lock"></i></span>
+                            <div class="inputField">
+                                <input type="password" name="confirmpassword" required>
+                                <label for="confirmpassword">Confirm Password</label>
+                            </div>
+                        </div>
+                        <div class="">
+                            <input type="submit" name="" id="signupmodal" value="submit" class="btn btn-sm btn-primary">
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                    Already Have an Account? <button type="button" onClick="openForms(event, 'Form-login')" class="btn btn-primary">Login</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+  
+  
 
 
 

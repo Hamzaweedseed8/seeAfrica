@@ -16,7 +16,16 @@
     padding: 0;
     box-sizing: border-box !important;
 }
-
+p.error_msg{
+    position: relative;
+    background: #fe4c50;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+}
 body{
     font-family: 'Nunito', sans-serif;
     /* font-family: samsungsharpsans; */
@@ -82,7 +91,7 @@ section.landing-page{
 	width: 100%;
 	overflow: hidden;
 }
-section.landing-page  header{
+section  header{
     width: 100%;
     position: relative;
     top: 0;
@@ -140,6 +149,8 @@ nav a{
     font-size: 18px;
     padding-bottom: 0;
 }
+
+
 .link-icons a{
 	position: relative;
 	display: inline-block;
@@ -150,11 +161,11 @@ nav a{
 }
 
 /* === onScroll fixed navabar === */
-section.landing-page header.scrolled{
+section header.scrolled{
     position: fixed;
     background-color: #819cfc;
     box-shadow: 0 4px 4px -4px rgba(0,0,0,0.12);
-    z-index: 9;
+    z-index: 99;
 }
 /* header.scrolled nav a,
 header.scrolled .logo{
@@ -307,6 +318,7 @@ main .think-Place{
     background-repeat: no-repeat !important;
     background-size: cover !important;
     overflow: hidden;
+    margin-top: 80px;
 }
 
 .tour-sites:after{

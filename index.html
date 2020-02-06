@@ -23,9 +23,9 @@
 		<header class="js-navbar">
             <div class="content">
                 <div class="row">
-                    <a href="#" class="logo">seeafrica</a>
+                    <a href="index.html" class="logo">seeafrica</a>
                     <nav class="links">
-                        <a href="#" class="hvr-float-shadow">Tour site</a>
+                        <a href="tour-site.html" class="hvr-float-shadow">Tour site</a>
                         <a href="#" class="hvr-float-shadow">Community</a>
                         <a href="#" class="hvr-float-shadow">Business</a>
                         <a href="#" class="hvr-float-shadow">partners</a>
@@ -218,11 +218,12 @@
 
 
 
-
+   
     
 
 
     <footer style="padding: 5em;background-color: #6083e9;">
+        
     </footer>
 
 
@@ -235,32 +236,34 @@
                     <button class="formsLinks" type="button" onClick="openForms(event, 'Form-singup')"><a class=""><i class="fa fa-user-plus mr-1"></i>Signup</a></button>
                 </div>
                 <div id="Form-login" class="forms active">
-                    <form class="modal-body">
+                    <div class="modal-body">
+                        <div id="login_error"></div>
                         <div class="form-group inputWrapper">
                             <span><i class="fa fa-envelope"></i></span>
                             <div class="inputField">
-                                <input type="email" name="email" required>
-                                <label for="email">Email</label>
+                                <input type="email" name="email" required id="login_email">
+                                <label for="email" >Email</label>
                             </div>
                         </div> 
                         <div class="form-group inputWrapper">
                             <span><i class="fa fa-lock"></i></span>
                             <div class="inputField">
-                                <input type="password" name="password" required>
-                                <label for="password">Password</label>
+                                <input type="password" id="login_password" name="password" required>
+                                <label for="password" >Password</label>
                             </div>
                         </div>
                         <div class="">
-                            <input type="submit" name="" value="submit" class="btn btn-sm btn-primary">
+                            <a href="#" class="btn btn-primary" id="loginModal">submit</a>
                         </div>
-                    </form>
+                    </div>
                     <div class="modal-footer">
                         Not Yet A Mamber? <button type="button" class="btn btn-primary" onClick="openForms(event, 'Form-singup')" >Sign Up</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
                 <div id="Form-singup" class="forms">
-                    <form class="modal-body"> 
+                    <form class="modal-body signupForm"> 
+                        <div id="signup_error"></div>
                         <div class="form-group inputWrapper">
                             <span><i class="fa fa-user"></i></span>
                             <div class="inputField">
@@ -290,7 +293,7 @@
                             </div>
                         </div>
                         <div class="">
-                            <input type="submit" name="" value="submit" class="btn btn-sm btn-primary">
+                            <input type="submit" name="" id="signupmodal" value="submit" class="btn btn-sm btn-primary">
                         </div>
                     </form>
                     <div class="modal-footer">
@@ -304,8 +307,11 @@
   
   
     <!--Java Scripts-->
-    <script type="text/javascript"src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="action.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="/public_html/assets/css/bootstrap4/popper.js"></script>
+	<script src="/public_html/assets/css/bootstrap4/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript"src="assets/js/swiper.js"></script>
